@@ -1,0 +1,29 @@
+.main {
+    margin:100px 100px;
+    padding:20px;
+    border: 1px solid black;
+}
+.cont {
+    margin:20px 30px;
+    padding:20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.pagination {
+    display: inline-block;
+  }
+ .td1,.td2,.td3 {
+   font-weight: bold;
+ } 
+ .table,.tr,.td {
+   border : 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+ }
+.pagination button {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
