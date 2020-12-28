@@ -53,82 +53,15 @@ tr4.append(td10,td11,td12)
 table.append(tr1,tr2,tr3,tr4);
 div2.append(table)
 var div3 = create("div");
-div3.setAttribute("class","pagination active")
-var afrst = create("button");
-afrst.innerHTML = "First";
-afrst.setAttribute("id","afrst")
-var aPrev = create("button")
-aPrev.innerHTML = "Previous"
-var a2 = create("button")
-a2.innerHTML = "2";
-a2.style.backgroundColor = "light-dark(rgb(239, 239, 239), rgb(59, 59, 59));";
-var a3 = create("button")
-a3.innerHTML = "3";
-var a4 = create("button")
-a4.innerHTML = "4";
-var a5 = create("button")
-a5.innerHTML = "5";
-var a6 = create("button")
-a6.innerHTML = "6";
-var a7 = create("button")
-a7.innerHTML = "7";
-var a8 = create("button")
-a8.innerHTML = "8";
-var a9 = create("button")
-a9.innerHTML = "9";
-var a10 = create("button")
-a10.innerHTML = "10";
-var a11 = create("button")
-a11.innerHTML = "11";
-var a12 = create("button")
-a12.innerHTML = "12";
-var a13 = create("button")
-a13.innerHTML = "13";
-var a14 = create("button")
-a14.innerHTML = "14";
-var a15 = create("button")
-a15.innerHTML = "15";
-var a16 = create("button")
-a16.innerHTML = "16";
-var a17 = create("button")
-a17.innerHTML = "17";
-var a18 = create("button")
-a18.innerHTML = "18";
-var a19 = create("button")
-a19.innerHTML = "19";
-var a20 = create("button")
-a20.innerHTML = "20";
-var a21 = create("button")
-a21.innerHTML = "21";
-var a22 = create("button")
-a22.innerHTML = "22";
-var a23 = create("button")
-a23.innerHTML = "23";
-var a24 = create("button")
-a24.innerHTML = "24";
-var a25 = create("button")
-a25.innerHTML = "25";
-var a26 = create("button")
-a26.innerHTML = "26";
-var a27 = create("button")
-a27.innerHTML = "27";
-var a28 = create("button")
-a28.innerHTML = "28";
-var a29 = create("button")
-a29.innerHTML = "29";
-var a30 = create("button")
-a30.innerHTML = "30";
-var a31 = create("button")
-a31.innerHTML = "31";
-var a32 = create("button")
-a32.innerHTML = "32";
-var a33 = create("button")
-a33.innerHTML = "33";
-var a34 = create("button")
-a34.innerHTML = "34";
-  
-
-div3.append(afrst,aPrev,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34)
+div3.setAttribute("class","pagination")
+var a = [];
+for(i=0;i<=34;i++) {
+  var innervalues = ["aPre","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"
+,"28","29","30","31","32","33","34"]
+   a[i] = create("button")
+   a[i].innerHTML = innervalues[i];
+  div3.append(a[i]);
+}
 div.append(div2,div3)
 document.body.append(div)
 
@@ -634,152 +567,163 @@ document.body.append(div)
       "email": "Josiane_Smith@yahoo.com"
     }
   ];
+
 var x
 let p = 0;
 var y;
-afrst.onclick = function() {
+a[1].onclick = function() {
     y = 1;
-    generate(y)
-   console.log(x)
+   generate(y)
 }
-aPrev.onclick = function() {
+a[0].onclick = function() {
      var j = aPrev1(y)
-     x = generate(j);
+      generate(j);
 }
-a2.onclick = function() {
+a[2].onclick = function() {
     y = 2;
    generate(y)
 }
-a3.onclick = function() {
+a[3].onclick = function() {
     y = 3
    generate(y) 
 }
-a4.onclick = function() {
+a[4].onclick = function() {
      y = 4;
      generate(y)
 }
-a5.onclick = function() {
+a[5].onclick = function() {
     y = 5
     generate(y)
 }
-a6.onclick = function() {
+a[6].onclick = function() {
     y = 6;
      generate(y)
 }
-a7.onclick = function() {
+a[7].onclick = function() {
     y = 7;
      generate(y)
     
 }
-a8.onclick = function() {
+a[8].onclick = function() {
     y = 8;
    generate(y)
 }
-a9.onclick = function() {
+a[9].onclick = function() {
     y = 9;
    generate(y)
 }
-a10.onclick = function() {
+a[10].onclick = function() {
     y = 10;
    generate(y)
 }
-a11.onclick = function() {
+a[11].onclick = function() {
     y = 11;
     generate(y)
 }
-a12.onclick = function() {
+a[12].onclick = function() {
     y = 12;
      generate(y)
 }
-a13.onclick = function() {
+a[13].onclick = function() {
     y = 13;
    generate(y)
 }
-a14.onclick = function() {
+a[14].onclick = function() {
     y = 14;
      generate(y)
 }
-a15.onclick = function() {
+a[15].onclick = function() {
     y = 15;
      generate(y)
 }
-a16.onclick = function() {
+a[16].onclick = function() {
     y = 16;
      generate(y)
 }
-a17.onclick = function() {
+a[17].onclick = function() {
     y = 17;
      generate(y)
 }
-a18.onclick = function() {
+a[18].onclick = function() {
     y = 18;
      generate(y)
 }
-a19.onclick = function() {
+a[19].onclick = function() {
     y = 19;
      generate(y)
 }
-a20.onclick = function() {
+a[20].onclick = function() {
     y = 20;
      generate(y)
 }
-a21.onclick = function() {
+a[21].onclick = function() {
     y = 21;
      generate(y)
 }
-a22.onclick = function() {
+a[22].onclick = function() {
     y = 22;
      generate(y)
 }
-a23.onclick = function() {
+a[23].onclick = function() {
     y = 23;
      generate(y)
 }
-a24.onclick = function() {
+a[24].onclick = function() {
     y = 24;
      generate(y)
 }
-a25.onclick = function() {
+a[25].onclick = function() {
     y = 25;
      generate(y)
 }
-a26.onclick = function() {
+a[26].onclick = function() {
     y = 26;
      generate(y)
 }
-a27.onclick = function() {
+a[27].onclick = function() {
     y = 27;
      generate(y)
 }
-a28.onclick = function() {
+a[28].onclick = function() {
     y = 28;
      generate(y)
 }
-a29.onclick = function() {
+a[29].onclick = function() {
     y = 29
      generate(y)
 }
-a30.onclick = function() {
+a[30].onclick = function() {
     y = 30;
      generate(y)
 }
-a31.onclick = function() {
+a[31].onclick = function() {
     y = 31;
      generate(y)
 }
-a32.onclick = function() {
+a[32].onclick = function() {
     y = 32;
      generate(y)
 }
-a33.onclick = function() {
+a[33].onclick = function() {
     y = 33;
      generate(y)
 }
-a34.onclick = function() {
+a[34].onclick = function() {
     y = 34;
      generate(y)
 }
+/*function bgcolor(bfcolor,bcolor) {
+  for(i=1;i<=a.length;i++) {
+    if(i==bcolor) {
+      a[i].style.background = "green";
+    }
+    if(i==bfcolor) {
+      a[i].style.background = "red";
+    }
+  }
+}*/
 function generate(val) {
+   // var arr = [];
     if(val==34) {
       td4.innerHTML = data[99].id
       td5.innerHTML = data[99].name
@@ -789,7 +733,7 @@ function generate(val) {
       td9.innerHTML = " "
       td10.innerHTML = " "
       td11.innerHTML = " "
-      td11.innerHTML = " "
+      td12.innerHTML = " "
     }
     else {
     var t = (val * 3)-1;
@@ -803,13 +747,15 @@ function generate(val) {
     td11.innerHTML = data[t].name
     td12.innerHTML = data[t].email;
     }
+   // arr.push(val);
+   // return arr[arr.length-2]
 }
   function aPrev1(val1) {
       arr = [{afrst:1},{a2:2},{a3:3},{a4:4},{a5:5},{a6:6},{a7:7},{a8:8},{a9:9},{a10:10},{a11:11},{a12:12},
           {a13:13},{a14:14},{a15:15},{a16:16},{a17:17},{a18:18},{a19:19},{a20:20},{a21:21},{a22:22},{a23:23},{a24:24},{a25:25},{a26:26},{a27:27},{a28:28},{a29:29},{a30:30},{a31:31},{a32:32},{a33:33},{a34:34}]
           var p;
           for(i=0;i<arr.length;i++) {
-            if(Object.values(arr[i])==y) {
+            if(Object.values(arr[i])==val1) {
                 p = Object.values(arr[i-1])
               break;
             }
